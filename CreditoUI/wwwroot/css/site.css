@@ -1,0 +1,64 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.titulo {
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.titulo h2 {
+    text-align: center;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container h3 {
+    color: #355D88;
+}
+
+.container label {
+    font-weight: bold;
+}
+
+.left-section {
+    flex: 1;
+    border-style: solid;
+    border-width: 10px; 
+    border-color: #D4EEF9;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.right-section {
+    flex: 1;
+    padding: 15px;
+    background: #D4EEF9;
+    border-radius: 25px;
+}
+
+.right-section div {
+    padding: 5px 0px 5px 0;
+}
+
+.cajaBotones {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    align-items:center
+}
+
+.cajaBotones button {
+    flex: 1;
+    margin: 0px 50px 0px 50px
+}

@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Creditico S.A.";
+}
+<div class="titulo">
+    <h2>Módulo para cálculo de cuota de préstamo y perfil de riesgo</h2>
+</div>
+<div class="container">
+    <div class="left-section">
+        <h3>Captura de datos</h3>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="tipoCliente">Tipo de cliente:</label>
+                <div class="radio">
+                    <label><input type="radio" name="tipoCliente" value="Físico" checked>Físico</label>
+                    <label><input type="radio" name="tipoCliente" value="Jurídico">Jurídico</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="montoCredito">Monto de crédito solicitado:</label>
+                <input type="number" class="form-control" id="montoCredito" placeholder="500000.00" step="0.01" min="0" max="1000000000" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentajeTasaAnual">Porcentaje tasa anual:</label>
+                <input type="number" class="form-control" id="porcentajeTasaAnual" placeholder="12.00" step="0.01" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="plazoPrestamoAnios">Plazo del préstamo en años:</label>
+                <input type="number" class="form-control" id="plazoPrestamoAnios" placeholder="2" step="1" min="1" max="30" required>
+            </div>
+            <div class="form-group">
+                <label for="porcentajeComision">Porcentaje de comisión:</label>
+                <input type="number" class="form-control" id="porcentajeComision" placeholder="4.00" step="0.01" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="ingresoNetoMensual">Ingreso neto mensual:</label>
+                <input type="number" class="form-control" id="ingresoNetoMensual" placeholder="850000.00" step="10.00" min="0" max="1000000000" required>
+            </div>
+            <div class="form-group">
+                <label for="mensualidadTotalPrestamosActuales">Mensualidad total de préstamos actuales:</label>
+                <input type="number" class="form-control" id="mensualidadTotalPrestamosActuales" placeholder="240000.00" step="0.0833" min="0" max="1000000000" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidadPersonasDependientes">Cantidad de personas dependientes:</label>
+                <input type="number" class="form-control" id="cantidadPersonasDependientes" placeholder="4" step="1" min="0" max="100" required>
+            </div>
+            
+        </form>
+        <div class="cajaBotones">
+            <button type="button" class="btn btn-primary" id="evaluar">Evaluar</button>
+            <button type="button" class="btn btn-success" id="limpiar">Limpiar</button>
+        </div>
+    </div>
+
+    <div class="right-section">
+        <h3>Resultado</h3>
+        <div>
+            <label>Tipo de cliente:</label>
+        </div>
+        <div>
+            <span id="tipoCliente"></span>
+        </div>
+        <div>
+            <label>Cuota mensual:</label>
+        </div>
+        <div>
+            <span id="cuotaMensual"></span>
+        </div>
+        <div>
+            <label>Cantidad de meses:</label>
+        </div>
+        <div>
+            <span id="cantidadMeses"></span>
+        </div>
+        <div>
+            <label>Monto de comisión:</label>
+        </div>
+        <div>
+            <span id="montoComision"></span>
+        </div>
+        <div >
+            <label>Perfil de riesgo:</label>
+        </div>
+        <div id="nivelRiesgo" class="alert alert-dismissible alert-info">
+            <strong id="perfilRiesgo"></strong>
+        </div>
+        <div>
+            <label>Criterio de riesgo:</label>
+        </div>
+        <div>
+            <span id="criterioRiesgo"></span>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/site.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#evaluar").click(function () {
+                // Obtener valores del formulario
+                var formData = {
+                    tipoCliente: $("input[name='tipoCliente']:checked").val(),
+                    montoCredito: $("#montoCredito").val(),
+                    porcentajeTasaAnual: $("#porcentajeTasaAnual").val(),
+                    plazoPrestamoAnios: $("#plazoPrestamoAnios").val(),
+                    porcentajeComision: $("#porcentajeComision").val(),
+                    ingresoNetoMensual: $("#ingresoNetoMensual").val(),
+                    mensualidadTotalPrestamosActuales: $("#mensualidadTotalPrestamosActuales").val(),
+                    cantidadPersonasDependientes: $("#cantidadPersonasDependientes").val()
+                };
+
+                // Llamar a la función en site.js para enviar la entrada a la API
+                enviarEntradaACreditoAPI(formData);
+            });
+
+            $("#limpiar").click(function () {
+                // Limpiar el formulario
+                $("#myForm")[0].reset();
+            });
+        });
+    </script>
+}

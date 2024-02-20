@@ -1,0 +1,15 @@
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.csproj.AssemblyReference.cache
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.AssemblyInfoInputs.cache
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.AssemblyInfo.cs
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.csproj.CoreCompileInputs.cache
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\bin\Debug\net7.0\CreditoLogic.deps.json
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\bin\Debug\net7.0\CreditoLogic.dll
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\bin\Debug\net7.0\CreditoLogic.pdb
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\bin\Debug\net7.0\CreditoDto.dll
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\bin\Debug\net7.0\CreditoDto.pdb
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.csproj.CopyComplete
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.dll
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\refint\CreditoLogic.dll
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\CreditoLogic.pdb
+C:\VSIde\Diego_Molina_T_Lab2\EvaluadorCredito\CreditoLogic\obj\Debug\net7.0\ref\CreditoLogic.dll
